@@ -47,9 +47,30 @@ Based on 2x manual two-hour Charge/discharge cycles via [Open Electricity](https
 
 #### 2024 data so far
 * Source: [AEMO archive](https://visualisations.aemo.com.au/aemo/nemweb/index.html#mms-data-model)
-* Data: [data](data)
-* SA1 combined: [data](data/trading-price-sa1.csv.zip)
-* Download using curl: [download.txt](data/download.txt)
+* Download the archived CSVs: [./download.sh](data/download.sh)
+* Data directory: [data](data)
+* SA1 combined: [trading-price-sa1.csv.zip](data/trading-price-sa1.csv.zip)
+* Run the scripts: `make setup` and `make run`
+
+**Output**:
+
+```bash
+===========================
+Morning and evening sell...
+===========================
+Daily Profit: 666.927851688655
+Annual Profit: 243428.66586635908
+Payback Period (years): 10.568156981717602
+
+====================
+Evening sell only...
+====================
+Optimized Buy Hour: 12
+Optimized Sell Hour: 18
+Daily Profit (Single Buy/Sell): 1405.2969927562633
+Annual Profit (Single Buy/Sell): 512933.4023560361
+Payback Period (years, Single Buy/Sell): 4.848178468400627
+```
 
 #### Hornsdale battery
 Payback period was [under 3 years](https://reneweconomy.com.au/tesla-big-battery-recoups-cost-of-construction-in-little-over-two-years-25265/#:~:text=It%20also%20means%20that%20total,began%20operations%20in%20late%202017).
