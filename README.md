@@ -45,7 +45,11 @@ Based on 2x manual two-hour Charge/discharge cycles via [Open Electricity](https
 **Payback time**:
 * AUD$1,574,000 / AUD$146,000 = **10.8 years**
 
-**TODO**: full-year estimation based on 2024 data so far
+#### 2024 data so far
+Source: [AEMO archive](https://visualisations.aemo.com.au/aemo/nemweb/index.html#mms-data-model)
+Data: [data](data)
+SA1 combined: [data](data/trading-price-sa1.csv.zip)
+Download using curl: [download.txt](data/download.txt)
 
 #### Hornsdale battery
 Payback period was [under 3 years](https://reneweconomy.com.au/tesla-big-battery-recoups-cost-of-construction-in-little-over-two-years-25265/#:~:text=It%20also%20means%20that%20total,began%20operations%20in%20late%202017).
