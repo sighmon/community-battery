@@ -38,6 +38,8 @@ Assuming the Megapack cost including installation is AUD$2,414,070 and annual ma
 
 <img src="payback_intraday.png" width="100%" alt="Daily profit using payback_intraday.py" title="Daily profit using payback_intraday.py" />
 
+<img src="payback_intraday_loan.png" width="100%" alt="Load replayments vs monthly profit" title="Load replayments vs monthly profit" />
+
 **Output**:
 
 ```bash
@@ -117,6 +119,8 @@ Intraday Arbitrage Strategy Results:
 Total Profit: $537007.85
 Annual Profit: $712755.87
 Payback Period: 3.46 years
+Monthly Payment (5% interest, 15-year term): $19090.31
+Monthly Payment (7% interest, 15-year term): $21698.34
 
 Capped Profit Scenario ($2,000 Cap due to grid stabilisation) Results:
 Total Profit (Capped at $2,000): $272278.27

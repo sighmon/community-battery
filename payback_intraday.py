@@ -164,6 +164,70 @@ print(f"Total Profit: ${total_intraday_profit:.2f}")
 print(f"Annual Profit: ${annual_profit_intraday:.2f}")
 print(f"Payback Period: {payback_period_intraday:.2f} years")
 
+# Function to calculate monthly loan payment using the amortization formula
+def calculate_monthly_payment(principal, annual_rate, years):
+    """
+    Calculates the monthly payment for a loan using the amortization formula.
+
+    principal: The loan amount (e.g., Megapack cost)
+    annual_rate: The annual interest rate (e.g., 0.05 for 5%)
+    years: The loan term in years
+
+    Returns: The monthly payment amount.
+    """
+    monthly_rate = annual_rate / 12
+    n_payments = years * 12
+    payment = (principal * monthly_rate) / (1 - (1 + monthly_rate) ** -n_payments)
+    return payment
+
+# Define the loan parameters
+selected_rate_5_percent = 0.05  # 5% interest rate
+selected_rate_7_percent = 0.07  # 7% interest rate
+selected_term_15_years = 15  # 15-year loan term
+
+# Calculate the monthly payments for both scenarios
+monthly_payment_5_percent = calculate_monthly_payment(megapack_cost, selected_rate_5_percent, selected_term_15_years)
+monthly_payment_7_percent = calculate_monthly_payment(megapack_cost, selected_rate_7_percent, selected_term_15_years)
+
+# Print the monthly payments for both options
+print(f"Monthly Payment (5% interest, 15-year term): ${monthly_payment_5_percent:.2f}")
+print(f"Monthly Payment (7% interest, 15-year term): ${monthly_payment_7_percent:.2f}")
+
+# Set the 'Date' column as the index and ensure it's a DatetimeIndex
+intraday_profit_df.set_index('Date', inplace=True)
+
+# Resample the daily profits to monthly frequency using sum
+monthly_profits_real = intraday_profit_df['Daily Profit'].resample('ME').sum()
+
+# Align the monthly repayments for both 5% and 7% interest scenarios with the real monthly profits
+monthly_repayments_5_percent = [monthly_payment_5_percent] * len(monthly_profits_real)
+monthly_repayments_7_percent = [monthly_payment_7_percent] * len(monthly_profits_real)
+
+# Create a DataFrame for plotting the repayment comparison
+repayment_vs_profit_df = pd.DataFrame({
+    'Month': monthly_profits_real.index,
+    'Monthly Profit (Real Data)': monthly_profits_real.values,
+    'Monthly Payment (5%, 15 Years)': monthly_repayments_5_percent,
+    'Monthly Payment (7%, 15 Years)': monthly_repayments_7_percent
+})
+
+# Plot the monthly loan repayments vs. monthly profit from real data
+plt.figure(figsize=(12, 6))
+plt.plot(repayment_vs_profit_df['Month'], repayment_vs_profit_df['Monthly Profit (Real Data)'],
+         label='Monthly Profit (Real Data)', color='green')
+plt.plot(repayment_vs_profit_df['Month'], repayment_vs_profit_df['Monthly Payment (5%, 15 Years)'],
+         label='Monthly Payment (5%, 15 Years)', color='orange')
+plt.plot(repayment_vs_profit_df['Month'], repayment_vs_profit_df['Monthly Payment (7%, 15 Years)'],
+         label='Monthly Payment (7%, 15 Years)', color='purple')
+plt.xlabel('Month')
+plt.ylabel('Amount (AUD)')
+plt.title('Monthly Loan Repayment vs. Profit (5% and 7% over 15 Years)')
+plt.xticks(rotation=45)
+plt.legend()
+plt.grid()
+plt.show()
+
+
 # Apply a daily profit cap of $2,000 assuming the grid adds lots of batteries and stabilises
 daily_profit_cap_2k = 2000
 intraday_daily_profits_capped_2k = [min(profit, daily_profit_cap_2k) for profit in intraday_daily_profits]
