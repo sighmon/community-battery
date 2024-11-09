@@ -2,7 +2,7 @@ import pandas as pd
 
 # Load the CSV file
 file_path = 'data/trading-price-sa1.csv'
-data = pd.read_csv(file_path)
+data = pd.read_csv(file_path, low_memory=False)
 
 # Convert SETTLEMENTDATE to datetime for easier filtering by time
 data['SETTLEMENTDATE'] = pd.to_datetime(data['SETTLEMENTDATE'], errors='coerce')
@@ -55,3 +55,4 @@ print("Optimized Sell Hour:", highest_price_hours[0])
 print("Daily Profit (Single Buy/Sell):", daily_profit_single)
 print("Annual Profit (Single Buy/Sell):", annual_profit_single)
 print("Payback Period (years, Single Buy/Sell):", payback_period_single)
+print("\n")

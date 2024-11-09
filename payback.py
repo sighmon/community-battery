@@ -2,7 +2,7 @@ import pandas as pd
 
 # Load the CSV file
 file_path = 'data/trading-price-sa1.csv'
-data = pd.read_csv(file_path)
+data = pd.read_csv(file_path, low_memory=False)
 
 # Convert SETTLEMENTDATE to datetime for easier filtering by time
 data['SETTLEMENTDATE'] = pd.to_datetime(data['SETTLEMENTDATE'], errors='coerce')
