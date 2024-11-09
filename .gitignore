@@ -1,3 +1,6 @@
+# Unzipped data
+data/trading-price-sa1.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

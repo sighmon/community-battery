@@ -117,6 +117,11 @@ Intraday Arbitrage Strategy Results:
 Total Profit: $537007.85
 Annual Profit: $712755.87
 Payback Period: 3.46 years
+
+Capped Profit Scenario ($2,000 Cap due to grid stabilisation) Results:
+Total Profit (Capped at $2,000): $272278.27
+Annual Profit (Capped at $2,000): $361387.52
+Payback Period (Capped at $2,000): 6.97 years
 ```
 
 #### Hornsdale battery

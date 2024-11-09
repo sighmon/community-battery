@@ -163,3 +163,36 @@ print("====================================")
 print(f"Total Profit: ${total_intraday_profit:.2f}")
 print(f"Annual Profit: ${annual_profit_intraday:.2f}")
 print(f"Payback Period: {payback_period_intraday:.2f} years")
+
+# Apply a daily profit cap of $2,000 assuming the grid adds lots of batteries and stabilises
+daily_profit_cap_2k = 2000
+intraday_daily_profits_capped_2k = [min(profit, daily_profit_cap_2k) for profit in intraday_daily_profits]
+
+# Calculate total and annual profit with the $2,000 daily profit cap
+total_profit_capped_2k = sum(intraday_daily_profits_capped_2k)
+annual_profit_capped_2k = total_profit_capped_2k * 365 / len(dates)
+net_annual_profit_capped_2k = annual_profit_capped_2k - annual_maintenance_cost
+payback_period_capped_2k = megapack_cost / net_annual_profit_capped_2k
+
+# Create a DataFrame for the capped daily profits at $2,000
+profit_capped_2k_df = pd.DataFrame({
+    'Date': pd.to_datetime(dates),
+    'Daily Profit (Capped at $2,000)': intraday_daily_profits_capped_2k
+})
+
+# Plot the daily profit with the $2,000 cap
+plt.figure(figsize=(12, 6))
+plt.plot(profit_capped_2k_df['Date'], profit_capped_2k_df['Daily Profit (Capped at $2,000)'],
+         label='Daily Profit (Capped at $2,000)', color='purple')
+plt.xlabel('Date')
+plt.ylabel('Profit (AUD)')
+plt.title('Daily Profit Over the Year with $2,000 Cap per Day')
+plt.legend()
+plt.grid()
+plt.show()
+
+# Output the results of the $2,000 capped profit scenario
+print("\nCapped Profit Scenario ($2,000 Cap due to grid stabilisation) Results:")
+print(f"Total Profit (Capped at $2,000): ${total_profit_capped_2k:.2f}")
+print(f"Annual Profit (Capped at $2,000): ${annual_profit_capped_2k:.2f}")
+print(f"Payback Period (Capped at $2,000): {payback_period_capped_2k:.2f} years")
