@@ -1,5 +1,5 @@
 # Community battery project
-Assessing the feasibility of installing a big community battery.
+Assessing the feasibility of installing a big community battery. 50% of the proceeds from the first battery would go towards buying a second battery, the other 50% paying electricity forwards to low-income families.
 
 ## Project goals
 * Soak up South Australian daytime solar
@@ -11,10 +11,16 @@ Assessing the feasibility of installing a big community battery.
 * [How to run a Neighbourhood Battery project](https://www.energy.vic.gov.au/grants/neighbourhood-batteries/how-to-run-a-neighbourhood-battery-project)
 * [Community Batteries for Household Solar program](https://www.dcceew.gov.au/energy/renewable/community-batteries)
 * [Neighbourhood batteries in Australia: Anticipating questions of value conflict and (in)justice](https://www.researchgate.net/publication/359314754_Neighbourhood_batteries_in_Australia_Anticipating_questions_of_value_conflict_and_injustice)
+* [Rooftop solar density map](https://pv-map.apvi.org.au/historical#11/-34.9383/138.5898)
+* [SA Power Networks community batteries project](https://www.talkingpower.com.au/community-batteries-project)
 * [2024 Megapack pricing down 44%](https://www.pv-magazine-australia.com/2024/07/08/tesla-battery-deployment-up-157-megapack-pricing-down-44/)
 
 ## Finance
 Upfront costs, power costs, and payback time estimates.
+
+### Grants and similar projects
+* [SA Power Networks community grants](https://www.sapowernetworks.com.au/about-us/community/communitygrants/)
+* [SA Gov + SAPN + City of Marion got $500K for a community battery and free land](https://www.makingmarion.com.au/edwardstown-community-battery)
 
 ### Electricity price
 [AEMO dashboard](https://aemo.com.au/en/energy-systems/electricity/national-electricity-market-nem/data-nem/data-dashboard-nem) average monthly prices for 2024 in South Australia:
