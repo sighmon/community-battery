@@ -15,12 +15,19 @@ Assessing the feasibility of installing a big community battery. 50% of the proc
 * [SA Power Networks community batteries project](https://www.talkingpower.com.au/community-batteries-project)
 * [2024 Megapack pricing down 44%](https://www.pv-magazine-australia.com/2024/07/08/tesla-battery-deployment-up-157-megapack-pricing-down-44/)
 
+## Requests for advice
+* City of Burnside (14th November 2024)
+* Tesla Energy (20th November 2024)
+* Bank Australia (20th November 2024)
+* Edwardstown community battery project (20th November 2024)
+
 ## Finance
 Upfront costs, power costs, and payback time estimates.
 
 ### Grants and similar projects
 * [SA Power Networks community grants](https://www.sapowernetworks.com.au/about-us/community/communitygrants/)
 * [SA Gov + SAPN + City of Marion got $500K for a community battery and free land](https://www.makingmarion.com.au/edwardstown-community-battery)
+* [Bank Australia community grants](https://www.bankaust.com.au/community-customer-grants)
 
 ### Electricity price
 [AEMO dashboard](https://aemo.com.au/en/energy-systems/electricity/national-electricity-market-nem/data-nem/data-dashboard-nem) average monthly prices for 2024 in South Australia:
