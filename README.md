@@ -14,6 +14,7 @@ Assessing the feasibility of installing a big community battery. 50% of the proc
 * [Rooftop solar density map](https://pv-map.apvi.org.au/historical#11/-34.9383/138.5898)
 * [SA Power Networks community batteries project](https://www.talkingpower.com.au/community-batteries-project)
 * [2024 Megapack pricing down 44%](https://www.pv-magazine-australia.com/2024/07/08/tesla-battery-deployment-up-157-megapack-pricing-down-44/)
+* [Big Battery Storage Map of Australia](https://reneweconomy.com.au/big-battery-storage-map-of-australia/)
 
 ## Requests for advice
 * City of Burnside (14th November 2024)
