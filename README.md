@@ -8,6 +8,7 @@ Assessing the feasibility of installing a big community battery. 50% of the proc
 * Reduce energy inequity
 
 ## Documentation
+* [Neighbourhood Battery Knowledge Hub](https://bsgip.com/knowledge-hub-landing-page/)
 * [How to run a Neighbourhood Battery project](https://www.energy.vic.gov.au/grants/neighbourhood-batteries/how-to-run-a-neighbourhood-battery-project)
 * [Community Batteries for Household Solar program](https://www.dcceew.gov.au/energy/renewable/community-batteries)
 * [Neighbourhood batteries in Australia: Anticipating questions of value conflict and (in)justice](https://www.researchgate.net/publication/359314754_Neighbourhood_batteries_in_Australia_Anticipating_questions_of_value_conflict_and_injustice)
@@ -15,6 +16,7 @@ Assessing the feasibility of installing a big community battery. 50% of the proc
 * [SA Power Networks community batteries project](https://www.talkingpower.com.au/community-batteries-project)
 * [2024 Megapack pricing down 44%](https://www.pv-magazine-australia.com/2024/07/08/tesla-battery-deployment-up-157-megapack-pricing-down-44/)
 * [Big Battery Storage Map of Australia](https://reneweconomy.com.au/big-battery-storage-map-of-australia/)
+* [Network Opportunity Maps](https://www.energynetworks.com.au/projects/network-opportunity-maps/accessing-the-network-opportunity-maps/)
 
 ## Requests for advice
 * City of Burnside (14th November 2024)
