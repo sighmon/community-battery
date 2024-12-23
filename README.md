@@ -7,6 +7,29 @@ Assessing the feasibility of installing a big community battery. 50% of the proc
 * Encourage local community rooftop solar installation
 * Reduce energy inequity
 
+## Organisation setup
+* [Setting up a not-for-profit](https://www.ato.gov.au/businesses-and-organisations/not-for-profit-organisations/getting-started/starting-an-nfp)
+
+Legal Structure: Incorporated association
+
+Questions to answer:
+* **What will your organisation try to achieve?** Energy equity.
+* **What will its main activities be?** Buying battery storage.
+* **What programs or services will you provide?** Structure for accepting grants, and purchasing batteries.
+* **Who is your target audience?** Community groups.
+* **Who will benefit from the organisation's activities and programs?** Low income families, home owners with solar.
+* **Why is there a need for this new organisation?** To insulate individuals and other organisations from unexpected disruption of battery cost to profit.
+* **How long will your NFP organisation or charity last? Will it be for a one-off short-term project or operating on an ongoing basis?** Ongoing, until battery profits don't cover life-cycle costs.
+
+Next steps:
+* Write a business plan.
+* Choose six founding members, including a president, secretary, treasurer.
+* Apply for an ABN.
+* Register the not-for-profit.
+* Apply for DGR charity status.
+* Organise a location.
+* Order the battery.
+
 ## Documentation
 * [Neighbourhood Battery Knowledge Hub](https://bsgip.com/knowledge-hub-landing-page/)
 * [How to run a Neighbourhood Battery project](https://www.energy.vic.gov.au/grants/neighbourhood-batteries/how-to-run-a-neighbourhood-battery-project)
@@ -28,6 +51,7 @@ Assessing the feasibility of installing a big community battery. 50% of the proc
 Upfront costs, power costs, and payback time estimates.
 
 ### Grants and similar projects
+* [Community Battery Funding Round 2 - 2025](https://arena.gov.au/news/arena-funds-national-community-battery-roll-out/)
 * [SA Power Networks community grants](https://www.sapowernetworks.com.au/about-us/community/communitygrants/)
 * [SA Gov + SAPN + City of Marion got $500K for a community battery and free land](https://www.makingmarion.com.au/edwardstown-community-battery)
 * [Bank Australia community grants](https://www.bankaust.com.au/community-customer-grants)
@@ -52,7 +76,7 @@ Assuming the Megapack cost including installation is AUD$2,414,070 and annual ma
 * SA1 combined: [trading-price-sa1.csv.zip](data/trading-price-sa1.csv.zip)
 * Run the scripts: `make setup` and `make run`
 
-<img src="payback_intraday.png" width="100%" alt="Daily profit using payback_intraday.py" title="Daily profit using payback_intraday.py" />
+<img src="payback_intraday.png" width="50%" alt="Daily profit using payback_intraday.py" title="Daily profit using payback_intraday.py" /><img src="payback_intraday_capped.png" width="50%" alt="Daily profit using payback_intraday.py capped at $2000/day" title="Daily profit using payback_intraday.py capped at $2000/day" />
 
 <img src="payback_intraday_loan.png" width="100%" alt="Load replayments vs monthly profit" title="Load replayments vs monthly profit" />
 
@@ -132,16 +156,17 @@ Date: 2024-01-10, Total Buy: 3.90 MWh, Total Buy Cost: -186.46 AUD, Total Sell: 
 ====================================
 Intraday Arbitrage Strategy Results:
 ====================================
-Total Profit: $537007.85
-Annual Profit: $712755.87
-Payback Period: 3.46 years
+Total Profit: $657756.74
+Annual Profit: $714527.41
+Payback Period: 3.45 years
 Monthly Payment (5% interest, 15-year term): $19090.31
 Monthly Payment (7% interest, 15-year term): $21698.34
+Monthly Payment (10% interest, 15-year term): $27211.29
 
 Capped Profit Scenario ($2,000 Cap due to grid stabilisation) Results:
-Total Profit (Capped at $2,000): $272278.27
-Annual Profit (Capped at $2,000): $361387.52
-Payback Period (Capped at $2,000): 6.97 years
+Total Profit (Capped at $2,000): $335992.76
+Annual Profit (Capped at $2,000): $364992.13
+Payback Period (Capped at $2,000): 6.90 years
 ```
 
 #### Hornsdale battery

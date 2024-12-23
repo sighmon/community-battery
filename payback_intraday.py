@@ -164,6 +164,7 @@ print(f"Total Profit: ${total_intraday_profit:.2f}")
 print(f"Annual Profit: ${annual_profit_intraday:.2f}")
 print(f"Payback Period: {payback_period_intraday:.2f} years")
 
+
 # Function to calculate monthly loan payment using the amortization formula
 def calculate_monthly_payment(principal, annual_rate, years):
     """
@@ -183,15 +184,18 @@ def calculate_monthly_payment(principal, annual_rate, years):
 # Define the loan parameters
 selected_rate_5_percent = 0.05  # 5% interest rate
 selected_rate_7_percent = 0.07  # 7% interest rate
+selected_rate_10_percent = 0.1085  # 10.85% unsecured interest rate
 selected_term_15_years = 15  # 15-year loan term
 
 # Calculate the monthly payments for both scenarios
 monthly_payment_5_percent = calculate_monthly_payment(megapack_cost, selected_rate_5_percent, selected_term_15_years)
 monthly_payment_7_percent = calculate_monthly_payment(megapack_cost, selected_rate_7_percent, selected_term_15_years)
+monthly_payment_10_percent = calculate_monthly_payment(megapack_cost, selected_rate_10_percent, selected_term_15_years)
 
 # Print the monthly payments for both options
 print(f"Monthly Payment (5% interest, 15-year term): ${monthly_payment_5_percent:.2f}")
 print(f"Monthly Payment (7% interest, 15-year term): ${monthly_payment_7_percent:.2f}")
+print(f"Monthly Payment (10% interest, 15-year term): ${monthly_payment_10_percent:.2f}")
 
 # Set the 'Date' column as the index and ensure it's a DatetimeIndex
 intraday_profit_df.set_index('Date', inplace=True)
@@ -202,13 +206,15 @@ monthly_profits_real = intraday_profit_df['Daily Profit'].resample('ME').sum()
 # Align the monthly repayments for both 5% and 7% interest scenarios with the real monthly profits
 monthly_repayments_5_percent = [monthly_payment_5_percent] * len(monthly_profits_real)
 monthly_repayments_7_percent = [monthly_payment_7_percent] * len(monthly_profits_real)
+monthly_repayments_10_percent = [monthly_payment_10_percent] * len(monthly_profits_real)
 
 # Create a DataFrame for plotting the repayment comparison
 repayment_vs_profit_df = pd.DataFrame({
     'Month': monthly_profits_real.index,
     'Monthly Profit (Real Data)': monthly_profits_real.values,
     'Monthly Payment (5%, 15 Years)': monthly_repayments_5_percent,
-    'Monthly Payment (7%, 15 Years)': monthly_repayments_7_percent
+    'Monthly Payment (7%, 15 Years)': monthly_repayments_7_percent,
+    'Monthly Payment (10%, 15 Years)': monthly_repayments_10_percent,
 })
 
 # Plot the monthly loan repayments vs. monthly profit from real data
@@ -219,6 +225,8 @@ plt.plot(repayment_vs_profit_df['Month'], repayment_vs_profit_df['Monthly Paymen
          label='Monthly Payment (5%, 15 Years)', color='orange')
 plt.plot(repayment_vs_profit_df['Month'], repayment_vs_profit_df['Monthly Payment (7%, 15 Years)'],
          label='Monthly Payment (7%, 15 Years)', color='purple')
+plt.plot(repayment_vs_profit_df['Month'], repayment_vs_profit_df['Monthly Payment (10%, 15 Years)'],
+         label='Monthly Payment (10%, 15 Years)', color='red')
 plt.xlabel('Month')
 plt.ylabel('Amount (AUD)')
 plt.title('Monthly Loan Repayment vs. Profit (5% and 7% over 15 Years)')
