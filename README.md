@@ -87,86 +87,86 @@ venv/bin/python payback.py
 ===========================
 Morning and evening sell...
 ===========================
-Daily Profit: 666.927851688655
-Annual Profit: 243428.66586635908
-Payback Period (years): 10.568156981717602
+Daily Profit: 536.4821838709969
+Annual Profit: 195815.99711291387
+Payback Period (years): 13.350975790557346
 
 
 venv/bin/python payback_evening_only.py
 ====================
 Evening sell only...
 ====================
-Optimized Buy Hour: 12
+Optimized Buy Hour: 13
 Optimized Sell Hour: 18
-Daily Profit (Single Buy/Sell): 1405.2969927562633
-Annual Profit (Single Buy/Sell): 512933.4023560361
-Payback Period (years, Single Buy/Sell): 4.848178468400627
+Daily Profit (Single Buy/Sell): 1065.5176037101746
+Annual Profit (Single Buy/Sell): 388913.92535421374
+Payback Period (years, Single Buy/Sell): 6.456218493903694
 
 
 venv/bin/python payback_evening_morning_optional.py
 =========================================================================
 Evening sell, and morning if the price overnight is less than $100/MWh...
 =========================================================================
-Optimized Buy Hour (Midday): 12
+Optimized Buy Hour (Midday): 13
 Optimized Sell Hour (Evening): 18
 Overnight Charging: True
-Daily Profit (Including Morning Sell): 1572.621368668672
-Annual Profit: 574006.7995640653
-Payback Period (years): 4.31849845454936
+Daily Profit (Including Morning Sell): 1225.6515255554127
+Annual Profit: 447362.80682772567
+Payback Period (years): 5.583435859601778
 
 
 venv/bin/python payback_intraday.py
 
 Buy Actions Log (first 10):
-Buy at -84.69 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.78 MWh
-Buy at -88.56 AUD/MWh, Amount: 0.78 MWh, Battery State: 1.56 MWh
-Buy at -85.83 AUD/MWh, Amount: 0.78 MWh, Battery State: 2.34 MWh
-Buy at -86.74 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.12 MWh
-Buy at -87.77 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.90 MWh
-Buy at -59.42 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.78 MWh
-Buy at -58.48 AUD/MWh, Amount: 0.78 MWh, Battery State: 1.56 MWh
-Buy at -54.07 AUD/MWh, Amount: 0.78 MWh, Battery State: 2.34 MWh
-Buy at -54.07 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.12 MWh
-Buy at -58.17 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.90 MWh
+Buy at -61.93 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.78 MWh
+Buy at -63.01 AUD/MWh, Amount: 0.78 MWh, Battery State: 1.56 MWh
+Buy at -61.93 AUD/MWh, Amount: 0.78 MWh, Battery State: 2.34 MWh
+Buy at -63.01 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.12 MWh
+Buy at -87.72 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.90 MWh
+Buy at -61.93 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.78 MWh
+Buy at -61.93 AUD/MWh, Amount: 0.78 MWh, Battery State: 1.56 MWh
+Buy at -61.93 AUD/MWh, Amount: 0.78 MWh, Battery State: 2.34 MWh
+Buy at -63.01 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.12 MWh
+Buy at -63.01 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.90 MWh
 
 Sell Actions Log (first 10):
-Sell at 59.31 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.12 MWh
-Sell at 65.98 AUD/MWh, Amount: 0.78 MWh, Battery State: 2.34 MWh
-Sell at 58.46 AUD/MWh, Amount: 0.78 MWh, Battery State: 1.56 MWh
-Sell at 61.21 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.78 MWh
-Sell at 64.47 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.00 MWh
-Sell at 74.07 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.12 MWh
-Sell at 78.16 AUD/MWh, Amount: 0.78 MWh, Battery State: 2.34 MWh
-Sell at 84.04 AUD/MWh, Amount: 0.78 MWh, Battery State: 1.56 MWh
-Sell at 82.32 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.78 MWh
-Sell at 80.14 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.00 MWh
+Sell at 108.59 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.12 MWh
+Sell at 120.89 AUD/MWh, Amount: 0.78 MWh, Battery State: 2.34 MWh
+Sell at 126.35 AUD/MWh, Amount: 0.78 MWh, Battery State: 1.56 MWh
+Sell at 108.39 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.78 MWh
+Sell at 103.77 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.00 MWh
+Sell at 106.11 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.12 MWh
+Sell at 109.71 AUD/MWh, Amount: 0.78 MWh, Battery State: 2.34 MWh
+Sell at 108.66 AUD/MWh, Amount: 0.78 MWh, Battery State: 1.56 MWh
+Sell at 104.58 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.78 MWh
+Sell at 104.07 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.00 MWh
 
 Daily Summary Log (first 10):
-Date: 2024-01-01, Total Buy: 3.90 MWh, Total Buy Cost: -338.20 AUD, Total Sell: 3.90 MWh, Total Sell Revenue: 241.36 AUD, Daily Profit: 579.56 AUD
-Date: 2024-01-02, Total Buy: 3.90 MWh, Total Buy Cost: -221.68 AUD, Total Sell: 3.90 MWh, Total Sell Revenue: 311.01 AUD, Daily Profit: 532.69 AUD
-Date: 2024-01-03, Total Buy: 4.68 MWh, Total Buy Cost: 171.42 AUD, Total Sell: 4.68 MWh, Total Sell Revenue: 606.04 AUD, Daily Profit: 434.62 AUD
-Date: 2024-01-04, Total Buy: 3.90 MWh, Total Buy Cost: -148.50 AUD, Total Sell: 3.90 MWh, Total Sell Revenue: 279.79 AUD, Daily Profit: 428.30 AUD
-Date: 2024-01-05, Total Buy: 3.90 MWh, Total Buy Cost: -160.21 AUD, Total Sell: 3.90 MWh, Total Sell Revenue: 299.12 AUD, Daily Profit: 459.33 AUD
-Date: 2024-01-06, Total Buy: 6.24 MWh, Total Buy Cost: -27.19 AUD, Total Sell: 6.24 MWh, Total Sell Revenue: 2332.50 AUD, Daily Profit: 2359.69 AUD
-Date: 2024-01-07, Total Buy: 3.90 MWh, Total Buy Cost: -170.25 AUD, Total Sell: 3.90 MWh, Total Sell Revenue: 405.47 AUD, Daily Profit: 575.72 AUD
-Date: 2024-01-08, Total Buy: 3.90 MWh, Total Buy Cost: -106.73 AUD, Total Sell: 3.90 MWh, Total Sell Revenue: 393.14 AUD, Daily Profit: 499.86 AUD
-Date: 2024-01-09, Total Buy: 3.90 MWh, Total Buy Cost: -162.72 AUD, Total Sell: 3.90 MWh, Total Sell Revenue: 603.89 AUD, Daily Profit: 766.61 AUD
-Date: 2024-01-10, Total Buy: 3.90 MWh, Total Buy Cost: -186.46 AUD, Total Sell: 3.90 MWh, Total Sell Revenue: 681.86 AUD, Daily Profit: 868.32 AUD
+Date: 2023-01-02, Total Buy: 11.70 MWh, Total Buy Cost: -789.52 AUD, Total Sell: 11.70 MWh, Total Sell Revenue: 1291.53 AUD, Daily Profit: 2081.05 AUD
+Date: 2023-01-03, Total Buy: 5.46 MWh, Total Buy Cost: -356.97 AUD, Total Sell: 1.56 MWh, Total Sell Revenue: 161.92 AUD, Daily Profit: 518.89 AUD
+Date: 2023-01-01, Total Buy: 3.90 MWh, Total Buy Cost: -199.18 AUD, Total Sell: 7.80 MWh, Total Sell Revenue: 1165.24 AUD, Daily Profit: 1364.42 AUD
+Date: 2023-01-04, Total Buy: 15.60 MWh, Total Buy Cost: -1099.11 AUD, Total Sell: 14.04 MWh, Total Sell Revenue: 453.27 AUD, Daily Profit: 1552.37 AUD
+Date: 2023-01-05, Total Buy: 7.02 MWh, Total Buy Cost: -488.65 AUD, Total Sell: 5.46 MWh, Total Sell Revenue: 207.86 AUD, Daily Profit: 696.51 AUD
+Date: 2023-01-06, Total Buy: 4.68 MWh, Total Buy Cost: -526.35 AUD, Total Sell: 3.90 MWh, Total Sell Revenue: 255.68 AUD, Daily Profit: 782.04 AUD
+Date: 2023-01-08, Total Buy: 5.46 MWh, Total Buy Cost: -309.56 AUD, Total Sell: 9.36 MWh, Total Sell Revenue: 3977.25 AUD, Daily Profit: 4286.81 AUD
+Date: 2023-01-07, Total Buy: 7.02 MWh, Total Buy Cost: -565.63 AUD, Total Sell: 7.02 MWh, Total Sell Revenue: 4628.17 AUD, Daily Profit: 5193.80 AUD
+Date: 2023-01-09, Total Buy: 6.24 MWh, Total Buy Cost: -239.65 AUD, Total Sell: 2.34 MWh, Total Sell Revenue: 295.96 AUD, Daily Profit: 535.60 AUD
+Date: 2023-01-12, Total Buy: 5.46 MWh, Total Buy Cost: 215.94 AUD, Total Sell: 5.46 MWh, Total Sell Revenue: 960.87 AUD, Daily Profit: 744.92 AUD
 
 ====================================
 Intraday Arbitrage Strategy Results:
 ====================================
-Total Profit: $657756.74
-Annual Profit: $714527.41
-Payback Period: 3.45 years
+Total Profit: $1862539.52
+Annual Profit: $969795.90
+Payback Period: 2.53 years
 Monthly Payment (5% interest, 15-year term): $19090.31
 Monthly Payment (7% interest, 15-year term): $21698.34
 Monthly Payment (10% interest, 15-year term): $27211.29
 
 Capped Profit Scenario ($2,000 Cap due to grid stabilisation) Results:
-Total Profit (Capped at $2,000): $335992.76
-Annual Profit (Capped at $2,000): $364992.13
-Payback Period (Capped at $2,000): 6.90 years
+Total Profit (Capped at $2,000): $931992.20
+Annual Profit (Capped at $2,000): $485274.11
+Payback Period (Capped at $2,000): 5.13 years
 ```
 
 #### Hornsdale battery
