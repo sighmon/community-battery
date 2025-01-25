@@ -55,6 +55,7 @@ Upfront costs, power costs, and payback time estimates.
 * [SA Power Networks community grants](https://www.sapowernetworks.com.au/about-us/community/communitygrants/)
 * [SA Gov + SAPN + City of Marion got $500K for a community battery and free land](https://www.makingmarion.com.au/edwardstown-community-battery)
 * [Bank Australia community grants](https://www.bankaust.com.au/community-customer-grants)
+* [Fitzroy North Community Battery (120kW/309kWh)](https://www.yef.org.au/app/uploads/2025/01/FN1-Year-2-Performance-Report.pdf)
 
 ### Electricity price
 [AEMO dashboard](https://aemo.com.au/en/energy-systems/electricity/national-electricity-market-nem/data-nem/data-dashboard-nem) average monthly prices for 2024 in South Australia:
