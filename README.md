@@ -80,7 +80,6 @@ Assuming the Megapack cost including installation is AUD$2,414,070 and annual ma
 <img src="payback_intraday.png" width="50%" alt="Daily profit using payback_intraday.py" title="Daily profit using payback_intraday.py" /><img src="payback_intraday_capped.png" width="50%" alt="Daily profit using payback_intraday.py capped at $2000/day" title="Daily profit using payback_intraday.py capped at $2000/day" />
 <img src="payback_intraday_loan.png" width="100%" alt="Load replayments vs monthly profit" title="Load replayments vs monthly profit" />
 <img src="payback_intraday_battery_count_over_time.png" width="100%" alt="Battery count vs cash over 10 years" title="Battery count vs cash over 10 years" />
-<img src="payback_intraday_battery_count_over_time_50_donations.png" width="100%" alt="Battery count vs cash over 10 years with 50% donation" title="Battery count vs cash over 10 years with 50% donation" />
 
 **Output**:
 
@@ -89,9 +88,9 @@ venv/bin/python payback.py
 ===========================
 Morning and evening sell...
 ===========================
-Daily Profit: 536.4821838709969
-Annual Profit: 195815.99711291387
-Payback Period (years): 13.350975790557346
+Daily Profit: 518.7313512848538
+Annual Profit: 189336.94321897163
+Payback Period (years): 13.847151128305988
 
 
 venv/bin/python payback_evening_only.py
@@ -100,9 +99,9 @@ Evening sell only...
 ====================
 Optimized Buy Hour: 13
 Optimized Sell Hour: 18
-Daily Profit (Single Buy/Sell): 1065.5176037101746
-Annual Profit (Single Buy/Sell): 388913.92535421374
-Payback Period (years, Single Buy/Sell): 6.456218493903694
+Daily Profit (Single Buy/Sell): 1042.7980279017715
+Annual Profit (Single Buy/Sell): 380621.2801841466
+Payback Period (years, Single Buy/Sell): 6.602651789808689
 
 
 venv/bin/python payback_evening_morning_optional.py
@@ -112,9 +111,9 @@ Evening sell, and morning if the price overnight is less than $100/MWh...
 Optimized Buy Hour (Midday): 13
 Optimized Sell Hour (Evening): 18
 Overnight Charging: True
-Daily Profit (Including Morning Sell): 1225.6515255554127
-Annual Profit: 447362.80682772567
-Payback Period (years): 5.583435859601778
+Daily Profit (Including Morning Sell): 1182.5245546915573
+Annual Profit: 431621.4624624184
+Payback Period (years): 5.794396634613519
 
 
 venv/bin/python payback_intraday.py
@@ -158,17 +157,17 @@ Date: 2023-01-12, Total Buy: 5.46 MWh, Total Buy Cost: 215.94 AUD, Total Sell: 5
 ====================================
 Intraday Arbitrage Strategy Results:
 ====================================
-Total Profit: $1862539.52
-Annual Profit: $969795.90
-Payback Period: 2.53 years
+Total Profit: $1930196.89
+Annual Profit: $962461.56
+Payback Period: 2.55 years
 Monthly Payment (5% interest, 15-year term): $19090.31
 Monthly Payment (7% interest, 15-year term): $21698.34
 Monthly Payment (10% interest, 15-year term): $27211.29
 
 Capped Profit Scenario ($2,000 Cap due to grid stabilisation) Results:
-Total Profit (Capped at $2,000): $931992.20
-Annual Profit (Capped at $2,000): $485274.11
-Payback Period (Capped at $2,000): 5.13 years
+Total Profit (Capped at $2,000): $960115.49
+Annual Profit (Capped at $2,000): $478746.11
+Payback Period (Capped at $2,000): 5.21 years
 ```
 
 #### Hornsdale battery
