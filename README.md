@@ -78,8 +78,9 @@ Assuming the Megapack cost including installation is AUD$2,414,070 and annual ma
 * Run the scripts: `make setup` and `make run`
 
 <img src="payback_intraday.png" width="50%" alt="Daily profit using payback_intraday.py" title="Daily profit using payback_intraday.py" /><img src="payback_intraday_capped.png" width="50%" alt="Daily profit using payback_intraday.py capped at $2000/day" title="Daily profit using payback_intraday.py capped at $2000/day" />
-
 <img src="payback_intraday_loan.png" width="100%" alt="Load replayments vs monthly profit" title="Load replayments vs monthly profit" />
+<img src="payback_intraday_battery_count_over_time.png" width="100%" alt="Battery count vs cash over 10 years" title="Battery count vs cash over 10 years" />
+<img src="payback_intraday_battery_count_over_time_50_donations.png" width="100%" alt="Battery count vs cash over 10 years with 50% donation" title="Battery count vs cash over 10 years with 50% donation" />
 
 **Output**:
 

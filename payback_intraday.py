@@ -268,3 +268,62 @@ print("\nCapped Profit Scenario ($2,000 Cap due to grid stabilisation) Results:"
 print(f"Total Profit (Capped at $2,000): ${total_profit_capped_2k:.2f}")
 print(f"Annual Profit (Capped at $2,000): ${annual_profit_capped_2k:.2f}")
 print(f"Payback Period (Capped at $2,000): {payback_period_capped_2k:.2f} years")
+
+# -------------------- Reinvestment Simulation Code --------------------
+# Calculate net monthly profit per battery (from your intraday strategy results)
+# net_annual_profit_intraday was computed above
+net_monthly_profit = net_annual_profit_intraday / 12  # profit per battery per month in AUD
+
+# Set simulation parameters
+simulation_months = 120  # simulate for 10 years
+cash = 0
+battery_count = 1
+
+# Lists to record evolution over time
+months_list = list(range(simulation_months + 1))
+time_years = [m / 12 for m in months_list]
+battery_history = []
+cash_history = []
+
+# Simulation:
+# Each month, add the net profit from all current batteries.
+# When the accumulated cash is greater than or equal to megapack_cost,
+# "buy" a new battery (subtract megapack_cost and increment battery_count).
+for m in months_list:
+    battery_history.append(battery_count)
+    cash_history.append(cash)
+    
+    # Add monthly profit from all batteries
+    cash += battery_count * net_monthly_profit
+    
+    # Reinvest if possible: buy as many new batteries as the cash allows
+    while cash >= megapack_cost:
+        cash -= megapack_cost
+        battery_count += 1
+
+# Plot Battery Count vs Time
+plt.figure(figsize=(12, 5))
+
+plt.subplot(1, 2, 1)
+plt.plot(time_years, battery_history, marker='o', color='blue', label="Battery Count")
+plt.xlabel("Time (years)")
+plt.ylabel("Number of Batteries")
+plt.title("Battery Count Over Time")
+plt.axhline(y=1, color='gray', linestyle='--', linewidth=0.8)
+plt.grid(True)
+plt.legend()
+
+# Plot Accumulated Cash vs Time with threshold line at megapack_cost
+plt.subplot(1, 2, 2)
+plt.plot(time_years, cash_history, marker='.', color='green', label="Accumulated Cash (AUD)")
+plt.axhline(y=megapack_cost, color='red', linestyle='--', label="Cost of One Battery")
+plt.xlabel("Time (years)")
+plt.ylabel("Cash on Hand (AUD)")
+plt.title("Accumulated Cash Over Time")
+plt.grid(True)
+plt.legend()
+
+plt.tight_layout()
+plt.show()
+
+# ----------------------------------------------------------------------
