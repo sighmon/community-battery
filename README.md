@@ -46,6 +46,8 @@ Next steps:
 * Tesla Energy (20th November 2024)
 * Bank Australia (20th November 2024)
 * Edwardstown community battery project (20th November 2024)
+* Energy Locals (23rd March 2025)
+* SA Power Networks (23rd March 2025)
 
 ## Finance
 Upfront costs, power costs, and payback time estimates.
