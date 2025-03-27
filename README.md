@@ -44,10 +44,11 @@ Next steps:
 ## Requests for advice
 * City of Burnside (14th November 2024)
 * Tesla Energy (20th November 2024)
-* Bank Australia (20th November 2024)
+* Bank Australia (20th November 2024 - replied 27th November, loan possible)
 * Edwardstown community battery project (20th November 2024)
 * Energy Locals (23rd March 2025)
-* SA Power Networks (23rd March 2025)
+* SA Power Networks (23rd March 2025 - replied 24th March, no information possible, contact local electrical installer)
+* DQ Electrical (26th March 2025 - replied 27th March, will arrange a quote for installation/connection)
 
 ## Finance
 Upfront costs, power costs, and payback time estimates.
