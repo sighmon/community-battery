@@ -72,7 +72,7 @@ Upfront cost: 5/11/2024
 * Annual maintenance: US$8,830 == ~AUD$13,400
 * 92% round trip efficiency
 
-### Payback calculated on 2024 data so far
+### Payback calculated on 2024-25 data so far
 Assuming the Megapack cost including installation is AUD$2,414,070 and annual maintenance cost of AUD$15,000.
 * Source: [AEMO archive](https://visualisations.aemo.com.au/aemo/nemweb/index.html#mms-data-model)
 * Download the archived CSVs: [./download.sh](data/download.sh)
@@ -91,9 +91,9 @@ venv/bin/python payback.py
 ===========================
 Morning and evening sell...
 ===========================
-Daily Profit: 518.7313512848538
-Annual Profit: 189336.94321897163
-Payback Period (years): 13.847151128305988
+Daily Profit: 523.2423586054041
+Annual Profit: 190983.4608909725
+Payback Period (years): 13.717595890988843
 
 
 venv/bin/python payback_evening_only.py
@@ -102,9 +102,9 @@ Evening sell only...
 ====================
 Optimized Buy Hour: 13
 Optimized Sell Hour: 18
-Daily Profit (Single Buy/Sell): 1042.7980279017715
-Annual Profit (Single Buy/Sell): 380621.2801841466
-Payback Period (years, Single Buy/Sell): 6.602651789808689
+Daily Profit (Single Buy/Sell): 1074.390632758722
+Annual Profit (Single Buy/Sell): 392152.5809569335
+Payback Period (years, Single Buy/Sell): 6.400778151576959
 
 
 venv/bin/python payback_evening_morning_optional.py
@@ -114,9 +114,9 @@ Evening sell, and morning if the price overnight is less than $100/MWh...
 Optimized Buy Hour (Midday): 13
 Optimized Sell Hour (Evening): 18
 Overnight Charging: True
-Daily Profit (Including Morning Sell): 1182.5245546915573
-Annual Profit: 431621.4624624184
-Payback Period (years): 5.794396634613519
+Daily Profit (Including Morning Sell): 1195.6978413030256
+Annual Profit: 436429.71207560436
+Payback Period (years): 5.728286190620837
 
 
 venv/bin/python payback_intraday.py
@@ -160,17 +160,17 @@ Date: 2023-01-12, Total Buy: 5.46 MWh, Total Buy Cost: 215.94 AUD, Total Sell: 5
 ====================================
 Intraday Arbitrage Strategy Results:
 ====================================
-Total Profit: $1930196.89
-Annual Profit: $962461.56
-Payback Period: 2.55 years
+Total Profit: $1994004.08
+Annual Profit: $920115.66
+Payback Period: 2.67 years
 Monthly Payment (5% interest, 15-year term): $19090.31
 Monthly Payment (7% interest, 15-year term): $21698.34
 Monthly Payment (10% interest, 15-year term): $27211.29
 
 Capped Profit Scenario ($2,000 Cap due to grid stabilisation) Results:
-Total Profit (Capped at $2,000): $960115.49
-Annual Profit (Capped at $2,000): $478746.11
-Payback Period (Capped at $2,000): 5.21 years
+Total Profit (Capped at $2,000): $1016658.56
+Annual Profit (Capped at $2,000): $469128.16
+Payback Period (Capped at $2,000): 5.32 years
 ```
 
 #### Hornsdale battery
