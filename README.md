@@ -71,6 +71,7 @@ Upfront cost: 5/11/2024
 * [1.9 MW, 3.9 MWh pack](https://www.tesla.com/megapack/design) US$1.03M == ~AUD$1.56M
 * Annual maintenance: US$8,830 == ~AUD$13,400
 * 92% round trip efficiency
+* Dimensions: width 8.81m, depth 1.65m, height 2.79m
 
 ### Payback calculated on 2024-25 data so far
 Assuming the Megapack cost including installation is AUD$2,414,070 and annual maintenance cost of AUD$15,000.
