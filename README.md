@@ -54,11 +54,12 @@ Next steps:
 Upfront costs, power costs, and payback time estimates.
 
 ### Grants and similar projects
-* [Community Battery Funding Round 2 - 2025](https://arena.gov.au/news/arena-funds-national-community-battery-roll-out/)
+* [Community Battery Funding Round 2 - due 30 April 2025](https://arena.gov.au/funding/community-batteries-funding-round-2/)
 * [SA Power Networks community grants](https://www.sapowernetworks.com.au/about-us/community/communitygrants/)
 * [SA Gov + SAPN + City of Marion got $500K for a community battery and free land](https://www.makingmarion.com.au/edwardstown-community-battery)
 * [Bank Australia community grants](https://www.bankaust.com.au/community-customer-grants)
 * [Fitzroy North Community Battery (120kW/309kWh)](https://www.yef.org.au/app/uploads/2025/01/FN1-Year-2-Performance-Report.pdf)
+* [Momentum Energy](https://www.momentumenergy.com.au/blog/battery-benefits-for-organisations-and-community)
 
 ### Electricity price
 [AEMO dashboard](https://aemo.com.au/en/energy-systems/electricity/national-electricity-market-nem/data-nem/data-dashboard-nem) average monthly prices for 2024 in South Australia:
@@ -72,6 +73,13 @@ Upfront cost: 5/11/2024
 * Annual maintenance: US$8,830 == ~AUD$13,400
 * 92% round trip efficiency
 * Dimensions: width 8.81m, depth 1.65m, height 2.79m
+
+### Insurance
+Would we need these types of cover? What is the approximate % vs insured value?
+* Property Insurance
+* Public Liability Insurance
+* Business Interruption Insurance
+* Construction All-Risks (CAR) Insurance
 
 ### Payback calculated on 2024-25 data so far
 Assuming the Megapack cost including installation is AUD$2,414,070 and annual maintenance cost of AUD$15,000.
@@ -176,23 +184,6 @@ Payback Period (Capped at $2,000): 5.32 years
 
 #### Hornsdale battery
 Payback period was [under 3 years](https://reneweconomy.com.au/tesla-big-battery-recoups-cost-of-construction-in-little-over-two-years-25265/#:~:text=It%20also%20means%20that%20total,began%20operations%20in%20late%202017).
-
-### Payback back of the envelope estimate
-Based on 2x manual two-hour Charge/discharge cycles via [Open Electricity](https://explore.openelectricity.org.au/energy/sa1/?range=7d&interval=30m&view=discrete-time&group=Detailed) for October 2024.
-
-**Sell**:
-* 6-8am ~AUD$75/MWh = AUD$150
-* 6-8pm ~AUD$75/MWh = AUD$150
-
-**Buy**:
-* 12-2pm ~AUD$-100/MWh = AUD$200
-* 10pm-12am ~AUD$50/MWh = AUD$-100
-
-**Total**:
-* ~AUD$400/day == AUD$146,000/year
-
-**Payback time**:
-* AUD$1,574,000 / AUD$146,000 = **10.8 years**
 
 ## Hardware
 Community battery hardware options:
