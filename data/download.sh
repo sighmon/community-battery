@@ -2,6 +2,7 @@
 
 # List of URLs to download
 URLS=(
+    "https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2025/MMSDM_2025_03/MMSDM_Historical_Data_SQLLoader/DATA/PUBLIC_ARCHIVE%23TRADINGPRICE%23FILE01%23202503010000.zip"
     "https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2025/MMSDM_2025_02/MMSDM_Historical_Data_SQLLoader/DATA/PUBLIC_ARCHIVE%23TRADINGPRICE%23FILE01%23202502010000.zip"
     "https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2025/MMSDM_2025_01/MMSDM_Historical_Data_SQLLoader/DATA/PUBLIC_ARCHIVE%23TRADINGPRICE%23FILE01%23202501010000.zip"
     "https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2024/MMSDM_2024_12/MMSDM_Historical_Data_SQLLoader/DATA/PUBLIC_ARCHIVE%23TRADINGPRICE%23FILE01%23202412010000.zip"
