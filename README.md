@@ -100,78 +100,9 @@ venv/bin/python payback.py
 ===========================
 Morning and evening sell...
 ===========================
-Daily Profit: 515.2629501816324
-Annual Profit: 188070.97681629582
-Payback Period (years): 13.948439214983958
-
-
-venv/bin/python payback_evening_only.py
-====================
-Evening sell only...
-====================
-Optimized Buy Hour: 12
-Optimized Sell Hour: 18
-Daily Profit (Single Buy/Sell): 1054.5205831285198
-Annual Profit (Single Buy/Sell): 384900.0128419097
-Payback Period (years, Single Buy/Sell): 6.526277145688397
-
-
-venv/bin/python payback_evening_morning_optional.py
-=========================================================================
-Evening sell, and morning if the price overnight is less than $100/MWh...
-=========================================================================
-Optimized Buy Hour (Midday): 12
-Optimized Sell Hour (Evening): 18
-Overnight Charging: True
-Daily Profit (Including Morning Sell): 1173.9503617207747
-Annual Profit: 428491.8820280828
-Payback Period (years): 5.838252466190003
-
-
-venv/bin/python payback_intraday.py
-
-Buy Actions Log (first 10):
-Buy at -61.93 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.78 MWh
-Buy at -63.01 AUD/MWh, Amount: 0.78 MWh, Battery State: 1.56 MWh
-Buy at -61.93 AUD/MWh, Amount: 0.78 MWh, Battery State: 2.34 MWh
-Buy at -63.01 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.12 MWh
-Buy at -87.72 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.90 MWh
-Buy at -61.93 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.78 MWh
-Buy at -61.93 AUD/MWh, Amount: 0.78 MWh, Battery State: 1.56 MWh
-Buy at -61.93 AUD/MWh, Amount: 0.78 MWh, Battery State: 2.34 MWh
-Buy at -63.01 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.12 MWh
-Buy at -63.01 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.90 MWh
-
-Sell Actions Log (first 10):
-Sell at 108.59 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.12 MWh
-Sell at 120.89 AUD/MWh, Amount: 0.78 MWh, Battery State: 2.34 MWh
-Sell at 126.35 AUD/MWh, Amount: 0.78 MWh, Battery State: 1.56 MWh
-Sell at 108.39 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.78 MWh
-Sell at 103.77 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.00 MWh
-Sell at 106.11 AUD/MWh, Amount: 0.78 MWh, Battery State: 3.12 MWh
-Sell at 109.71 AUD/MWh, Amount: 0.78 MWh, Battery State: 2.34 MWh
-Sell at 108.66 AUD/MWh, Amount: 0.78 MWh, Battery State: 1.56 MWh
-Sell at 104.58 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.78 MWh
-Sell at 104.07 AUD/MWh, Amount: 0.78 MWh, Battery State: 0.00 MWh
-
-Daily Summary Log (first 10):
-Date: 2023-01-02, Total Buy: 11.70 MWh, Total Buy Cost: -789.52 AUD, Total Sell: 11.70 MWh, Total Sell Revenue: 1291.53 AUD, Daily Profit: 2081.05 AUD
-Date: 2023-01-03, Total Buy: 5.46 MWh, Total Buy Cost: -356.97 AUD, Total Sell: 1.56 MWh, Total Sell Revenue: 161.92 AUD, Daily Profit: 518.89 AUD
-Date: 2023-01-01, Total Buy: 3.90 MWh, Total Buy Cost: -199.18 AUD, Total Sell: 7.80 MWh, Total Sell Revenue: 1165.24 AUD, Daily Profit: 1364.42 AUD
-Date: 2023-01-04, Total Buy: 15.60 MWh, Total Buy Cost: -1099.11 AUD, Total Sell: 14.04 MWh, Total Sell Revenue: 453.27 AUD, Daily Profit: 1552.37 AUD
-Date: 2023-01-05, Total Buy: 7.02 MWh, Total Buy Cost: -488.65 AUD, Total Sell: 5.46 MWh, Total Sell Revenue: 207.86 AUD, Daily Profit: 696.51 AUD
-Date: 2023-01-06, Total Buy: 4.68 MWh, Total Buy Cost: -526.35 AUD, Total Sell: 3.90 MWh, Total Sell Revenue: 255.68 AUD, Daily Profit: 782.04 AUD
-Date: 2023-01-08, Total Buy: 5.46 MWh, Total Buy Cost: -309.56 AUD, Total Sell: 9.36 MWh, Total Sell Revenue: 3977.25 AUD, Daily Profit: 4286.81 AUD
-Date: 2023-01-07, Total Buy: 7.02 MWh, Total Buy Cost: -565.63 AUD, Total Sell: 7.02 MWh, Total Sell Revenue: 4628.17 AUD, Daily Profit: 5193.80 AUD
-Date: 2023-01-09, Total Buy: 6.24 MWh, Total Buy Cost: -239.65 AUD, Total Sell: 2.34 MWh, Total Sell Revenue: 295.96 AUD, Daily Profit: 535.60 AUD
-Date: 2023-01-12, Total Buy: 5.46 MWh, Total Buy Cost: 215.94 AUD, Total Sell: 5.46 MWh, Total Sell Revenue: 960.87 AUD, Daily Profit: 744.92 AUD
-venv/bin/python payback.py
-===========================
-Morning and evening sell...
-===========================
-Daily Profit: 499.60926684519166
-Annual Profit: 182357.38239849496
-Payback Period (years): 14.424640045169049
+Daily Profit: 539.1137087620299
+Annual Profit: 196776.5036981409
+Payback Period (years): 13.280429268288811
 
 
 venv/bin/python payback_evening_only.py
@@ -180,9 +111,9 @@ Evening sell only...
 ====================
 Optimized Buy Hour: 13
 Optimized Sell Hour: 18
-Daily Profit (Single Buy/Sell): 1020.4728928063279
-Annual Profit (Single Buy/Sell): 372472.60587430967
-Payback Period (years, Single Buy/Sell): 6.753160830591889
+Daily Profit (Single Buy/Sell): 1090.2581809145986
+Annual Profit (Single Buy/Sell): 397944.23603382846
+Payback Period (years, Single Buy/Sell): 6.303972674984319
 
 
 venv/bin/python payback_evening_morning_optional.py
@@ -192,9 +123,9 @@ Evening sell, and morning if the price overnight is less than $100/MWh...
 Optimized Buy Hour (Midday): 13
 Optimized Sell Hour (Evening): 18
 Overnight Charging: True
-Daily Profit (Including Morning Sell): 1139.6681800060744
-Annual Profit: 415978.8857022172
-Payback Period (years): 6.020441689273345
+Daily Profit (Including Morning Sell): 1212.2127562414132
+Annual Profit: 442457.65602811583
+Payback Period (years): 5.647506755245052
 
 
 venv/bin/python payback_intraday.py
@@ -238,31 +169,17 @@ Date: 2023-01-12, Total Buy: 5.46 MWh, Total Buy Cost: 215.94 AUD, Total Sell: 5
 ====================================
 Intraday Arbitrage Strategy Results:
 ====================================
-Total Profit: $2066416.92
-Annual Profit: $855149.86
-Payback Period: 2.87 years
+Total Profit: $2184588.40
+Annual Profit: $874314.44
+Payback Period: 2.81 years
 Monthly Payment (5% interest, 15-year term): $19090.31
 Monthly Payment (7% interest, 15-year term): $21698.34
 Monthly Payment (10% interest, 15-year term): $27211.29
 
 Capped Profit Scenario ($2,000 Cap due to grid stabilisation) Results:
-Total Profit (Capped at $2,000): $1089071.40
-Annual Profit (Capped at $2,000): $450692.81
-Payback Period (Capped at $2,000): 5.54 years
-====================================
-Intraday Arbitrage Strategy Results:
-====================================
-Total Profit: $2019508.51
-Annual Profit: $897832.65
-Payback Period: 2.73 years
-Monthly Payment (5% interest, 15-year term): $19090.31
-Monthly Payment (7% interest, 15-year term): $21698.34
-Monthly Payment (10% interest, 15-year term): $27211.29
-
-Capped Profit Scenario ($2,000 Cap due to grid stabilisation) Results:
-Total Profit (Capped at $2,000): $1042162.99
-Annual Profit (Capped at $2,000): $463324.59
-Payback Period (Capped at $2,000): 5.38 years
+Total Profit (Capped at $2,000): $1121378.42
+Annual Profit (Capped at $2,000): $448797.28
+Payback Period (Capped at $2,000): 5.56 years
 ```
 
 #### Hornsdale battery
