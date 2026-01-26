@@ -100,9 +100,9 @@ venv/bin/python payback.py
 ===========================
 Morning and evening sell...
 ===========================
-Daily Profit: 521.7440781933827
-Annual Profit: 190436.5885405847
-Payback Period (years): 13.760356491665021
+Daily Profit: 488.59879473703126
+Annual Profit: 178338.5600790164
+Payback Period (years): 14.77954745549473
 
 
 venv/bin/python payback_evening_only.py
@@ -111,9 +111,9 @@ Evening sell only...
 ====================
 Optimized Buy Hour: 13
 Optimized Sell Hour: 18
-Daily Profit (Single Buy/Sell): 1061.6655264387812
-Annual Profit (Single Buy/Sell): 387507.9171501551
-Payback Period (years, Single Buy/Sell): 6.480587093205073
+Daily Profit (Single Buy/Sell): 1009.1409523802957
+Annual Profit (Single Buy/Sell): 368336.44761880796
+Payback Period (years, Single Buy/Sell): 6.832213365671196
 
 
 venv/bin/python payback_evening_morning_optional.py
@@ -123,9 +123,9 @@ Evening sell, and morning if the price overnight is less than $100/MWh...
 Optimized Buy Hour (Midday): 13
 Optimized Sell Hour (Evening): 18
 Overnight Charging: True
-Daily Profit (Including Morning Sell): 1183.2834419878814
-Annual Profit: 431898.4563255767
-Payback Period (years): 5.790546746747205
+Daily Profit (Including Morning Sell): 1107.330078652219
+Annual Profit: 404175.47870805993
+Payback Period (years): 6.203037272579332
 
 
 venv/bin/python payback_intraday.py
@@ -169,17 +169,17 @@ Date: 2023-01-12, Total Buy: 5.46 MWh, Total Buy Cost: 215.94 AUD, Total Sell: 5
 ====================================
 Intraday Arbitrage Strategy Results:
 ====================================
-Total Profit: $2313018.81
-Annual Profit: $840888.31
-Payback Period: 2.92 years
+Total Profit: $2370469.42
+Annual Profit: $789435.53
+Payback Period: 3.12 years
 Monthly Payment (5% interest, 15-year term): $19090.31
 Monthly Payment (7% interest, 15-year term): $21698.34
 Monthly Payment (10% interest, 15-year term): $27211.29
 
 Capped Profit Scenario ($2,000 Cap due to grid stabilisation) Results:
-Total Profit (Capped at $2,000): $1203324.90
-Annual Profit (Capped at $2,000): $437463.73
-Payback Period (Capped at $2,000): 5.71 years
+Total Profit (Capped at $2,000): $1260758.43
+Annual Profit (Capped at $2,000): $419869.37
+Payback Period (Capped at $2,000): 5.96 years
 ```
 
 #### Hornsdale battery
