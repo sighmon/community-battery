@@ -154,7 +154,8 @@ plt.ylabel('Profit (AUD)')
 plt.title('Daily Profit Using Intraday Arbitrage Strategy')
 plt.legend()
 plt.grid()
-plt.show()
+plt.savefig("payback_intraday.png", dpi=200, bbox_inches="tight")
+plt.close()
 
 # Output the results of the intraday arbitrage strategy
 print("====================================")
@@ -233,7 +234,8 @@ plt.title('Monthly Loan Repayment vs. Profit (5% and 7% over 15 Years)')
 plt.xticks(rotation=45)
 plt.legend()
 plt.grid()
-plt.show()
+plt.savefig("payback_intraday_loan.png", dpi=200, bbox_inches="tight")
+plt.close()
 
 
 # Apply a daily profit cap of $2,000 assuming the grid adds lots of batteries and stabilises
@@ -261,7 +263,8 @@ plt.ylabel('Profit (AUD)')
 plt.title('Daily Profit Over the Year with $2,000 Cap per Day')
 plt.legend()
 plt.grid()
-plt.show()
+plt.savefig("payback_intraday_capped.png", dpi=200, bbox_inches="tight")
+plt.close()
 
 # Output the results of the $2,000 capped profit scenario
 print("\nCapped Profit Scenario ($2,000 Cap due to grid stabilisation) Results:")
@@ -324,6 +327,7 @@ plt.grid(True)
 plt.legend()
 
 plt.tight_layout()
-plt.show()
+plt.savefig("payback_intraday_battery_count_over_time.png", dpi=200, bbox_inches="tight")
+plt.close()
 
 # ----------------------------------------------------------------------

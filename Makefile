@@ -6,14 +6,17 @@ PIP := $(VENV_DIR)/bin/pip
 # Target to create the virtual environment and install dependencies
 setup:
 	python3 -m venv $(VENV_DIR)
-	$(PIP) install pandas matplot
+	$(PIP) install pandas matplotlib
 
-# Target to run the Python script
-run: $(PYTHON)
-	$(PYTHON) payback.py
-	$(PYTHON) payback_evening_only.py
-	$(PYTHON) payback_evening_morning_optional.py
-	$(PYTHON) payback_intraday.py
+.PHONY: setup run data clean
+
+# Download/cache the configured months and rebuild the combined SA1 data.
+data: $(PYTHON)
+	PYTHON="$(abspath $(PYTHON))" bash data/download.sh
+
+# Refresh the data, PNGs, and README output in sequence.
+run: data
+	MPLBACKEND=Agg $(PYTHON) scripts/update_report.py
 
 # Clean up the virtual environment
 clean:
